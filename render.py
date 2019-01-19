@@ -13,7 +13,6 @@ def render():
 
     cap = cv2.VideoCapture(video_path)
     frame_count = int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_COUNT))
-    print(frame_count)
 
     if frame_number > frame_count:
         print("This video only has {0} frames".format(frame_count))
